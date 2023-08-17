@@ -1,0 +1,32 @@
+@colors;
+
+.container {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 36px 0 76px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    color: $main-text;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 155%;
+    text-transform: capitalize;
+  }
+
+  .subtitle {
+    color: $main-text;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 155%;
+  }
+
+  .content {
+    margin-top: 26px;
+    height: 100%;
+    flex: 1 1 auto;
+    overflow: hidden;
+  }
+}

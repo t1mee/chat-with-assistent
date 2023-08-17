@@ -1,5 +1,32 @@
 @colors;
 
-.test {
-  color: $test;
+.message {
+  display: flex;
+  gap: 12px;
+
+  &.request {
+    flex-direction: row-reverse;
+  }
+
+  .textCloud {
+    flex-shrink: 0;
+
+    padding: 12px 20px;
+    border-radius: 28px;
+    max-width: 400px;
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%;
+
+    &.response {
+      background-color: $secondary;
+    }
+
+    &.request {
+      background-color: $main;
+      color: $main-text;
+    }
+  }
 }

@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 8px;
+  background: $secondary;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  background: no-repeat, url("/src/assets/background.jpg");
+  overflow: hidden;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  margin: 0;
+}

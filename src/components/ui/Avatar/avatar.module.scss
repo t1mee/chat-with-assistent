@@ -1,0 +1,23 @@
+@colors;
+
+.main {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  &.response {
+    background-color: $main;
+  }
+
+  &.request {
+    background-color: $secondary;
+    color: $main-deep;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 100%;
+  }
+}
