@@ -2,6 +2,7 @@ import { useAppDispatch } from "@store/hooks";
 import { addMessage, updateMessage } from "@store/slice";
 import { MESSAGE_TYPE } from "@ts/common";
 import { useEffect, useState } from "react";
+
 const tx = new TextDecoder("utf-8");
 
 export const useAssistent = () => {
@@ -66,7 +67,6 @@ export const useAssistent = () => {
 
       if (done || !content) {
         setLoading(false);
-        setText("");
         break;
       }
     }
@@ -75,6 +75,7 @@ export const useAssistent = () => {
   useEffect(() => {
     if (isLoading && text) {
       handleSendMessage(text);
+      setText("");
     }
   }, [text, isLoading]);
 
