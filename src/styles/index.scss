@@ -23,9 +23,17 @@ body,
 #root {
   height: 100%;
   width: 100%;
-  background: no-repeat, url("/src/assets/background.jpg");
   overflow: hidden;
   font-family: "Open Sans", sans-serif;
+}
+
+#root {
+  background: no-repeat, url("/src/assets/background.jpg");
+  &::after {
+    content: "";
+    width: 500px;
+    height: 500px;
+  }
 }
 
 h1 {

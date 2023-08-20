@@ -11,6 +11,7 @@ export const MessageField = () => {
   return (
     <div className={styles.messageField}>
       <TextField
+        onSubmit={hanleRequest}
         value={text}
         placeholder="Start typing here..."
         onChange={handleChange}
