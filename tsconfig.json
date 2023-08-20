@@ -9,9 +9,12 @@
 
     "baseUrl": ".",
     "paths": {
-      "@assets/*": ["src/assets.*"],
+      "@assets/*": ["src/assets/*"],
       "@ui/*": ["src/components/ui/*"],
-      "@ts/*": ["src/types/*"]
+      "@ts/*": ["src/types/*"],
+      "@components/*": ["src/components/*"],
+      "@store/*": ["src/store/*"],
+      "@api/*": ["src/api/*"]
     },
 
     /* Bundler mode */

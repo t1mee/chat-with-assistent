@@ -1,0 +1,11 @@
+.messageField {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .submit {
+    position: absolute;
+    right: 16px;
+  }
+}
